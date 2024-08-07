@@ -1,0 +1,152 @@
+.sideBar__container {
+  width: 25%;
+  height: 100%;
+  background-color: var(--color-background1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+h1 span {
+  color: red;
+  font-weight: 800;
+}
+.navbar {
+  width: 100%;
+  padding: 1rem 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 0 35px;
+  font-size: 1.3rem;
+  color: var(--color-white);
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding: 1rem;
+  transition: 0.5s;
+}
+.navbar ul li:hover {
+  width: 100%;
+  background-color: var(--color-danger);
+  transition: 0.8;
+  border-radius: 5px;
+}
+
+.navbar ul li a {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  transition: 0.8;
+  color: var(--color-white);
+}
+
+.NavLink {
+  transition: var(--transition);
+}
+
+.NavLink:hover {
+  color: darkorange;
+}
+
+.navbar .home-navlink {
+  display: none;
+}
+
+.menuBtn {
+  display: none;
+  position: absolute;
+  top: 1.25rem;
+  right: 0.75rem;
+}
+.logo__container {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+}
+.logo__container h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.logo__container h3 span {
+  color: var(--color-danger);
+}
+.logo {
+  width: 10%;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+/* 
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    padding: 1rem 10px;
+  }
+  #linksContainer {
+    width: -100%;
+  }
+  .logo {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navbar {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 0.75rem;
+  }
+  .navbar ul {
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navbar ul li {
+    padding: 10px;
+    margin: 7px;
+    border-radius: 10px;
+    transition: var(--transition-fast);
+  }
+  .navbar ul li:hover {
+    background-color: var(--color-background);
+    transform: scale(1.1);
+  }
+  .NavLink {
+    position: relative;
+    left: 40%;
+  }
+  .NavLink:hover {
+    margin-left: 30px;
+    transform: scale(1.8);
+  }
+  .menuBtn {
+    display: block;
+    /* background-color: var(--color-primary); */
+
+/* .open {
+    display: flex;
+    /* background-color: var(--color-primary); */
+
+/* .logo {
+    width: 10%;
+  } */
