@@ -1,12 +1,12 @@
-import React from 'react'
-import SideBar from './SideBar';
+import React from "react";
+import LogIn from "./LogIn";
 
 function Home() {
-    return (
-        <div className="dashboard__container">
-          <SideBar/>
-        </div>
-      );
+  return (
+    <div className="">
+      <LogIn />
+    </div>
+  );
 }
 
-export default Home
+export default Home;

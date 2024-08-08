@@ -5,19 +5,18 @@ import Courses from "./Components/Courses.js";
 import Students from "./Components/Students.js";
 import Tutors from "./Components/Tutors.js";
 import Messages from "./Components/Messages.js";
-import SideBar from "./Components/SideBar.js";
-import LogIn from "./Components/LogIn.js";
 import AddCourses from "./Components/AddCourses.js";
 import Home from "./Components/Home.js";
+
 
 function App() {
   return (
     <>
       <div className="App">
         <Router>
-          <Home/>
+        
           <Routes>
-            <Route path="/" element={<LogIn />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Dashboard" element={<Dashboard />} />
             <Route path="/Courses" element={<Courses />} />
             <Route path="/Students" element={<Students />} />

@@ -1,11 +1,17 @@
 import React from "react";
 import "./GeneralStyles.css";
+import SideBar from "./SideBar";
 
 function Tutors() {
   return (
-    <div className="dashboard__container">
-      <h1>Tutors</h1>
-    </div>
+    <>
+      <div>
+        <SideBar />
+      </div>
+      <div className="dashboard__container">
+        <h1>Tutors</h1>
+      </div>
+    </>
   );
 }
 

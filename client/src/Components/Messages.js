@@ -1,11 +1,17 @@
 import React from "react";
 import "./GeneralStyles.css";
+import SideBar from "./SideBar";
 
 function Messages() {
   return (
-    <div className="dashboard__container">
-      <h1>Messages</h1>
-    </div>
+    <>
+      <div>
+        <SideBar />
+      </div>
+      <div className="dashboard__container">
+        <h1>Messages</h1>
+      </div>
+    </>
   );
 }
 
