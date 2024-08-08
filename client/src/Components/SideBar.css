@@ -15,10 +15,6 @@ h1 span {
 .navbar {
   width: 100%;
   padding: 1rem 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navbar ul {
@@ -66,6 +62,20 @@ h1 span {
 
 .NavLink:hover {
   color: darkorange;
+}
+.LogOut {
+  position: absolute;
+  bottom: 0;
+  left: -35px;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.LogOut:hover {
+  color: var(--color-danger);
+  transition: 0.8;
 }
 
 .navbar .home-navlink {

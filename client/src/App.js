@@ -7,13 +7,15 @@ import Tutors from "./Components/Tutors.js";
 import Messages from "./Components/Messages.js";
 import SideBar from "./Components/SideBar.js";
 import LogIn from "./Components/LogIn.js";
+import AddCourses from "./Components/AddCourses.js";
+import Home from "./Components/Home.js";
 
 function App() {
   return (
     <>
       <div className="App">
         <Router>
-          <SideBar />
+          <Home/>
           <Routes>
             <Route path="/" element={<LogIn />} />
             <Route path="/Dashboard" element={<Dashboard />} />
@@ -21,6 +23,7 @@ function App() {
             <Route path="/Students" element={<Students />} />
             <Route path="/Tutors" element={<Tutors />} />
             <Route path="/Messages" element={<Messages />} />
+            <Route path="/addcourses" element={<AddCourses />} />
           </Routes>
         </Router>
       </div>
