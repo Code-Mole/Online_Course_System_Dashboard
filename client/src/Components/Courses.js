@@ -9,7 +9,7 @@ function Courses() {
           <SideBar/>
     </div>
     <div className="dashboard__container">
-      <h1>Courses</h1>
+      <h1 className="header">Courses</h1>
     </div>
     </>
   );

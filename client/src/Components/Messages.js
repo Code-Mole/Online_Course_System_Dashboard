@@ -9,7 +9,7 @@ function Messages() {
         <SideBar />
       </div>
       <div className="dashboard__container">
-        <h1>Messages</h1>
+        <h1 className="header">Messages</h1>
       </div>
     </>
   );
