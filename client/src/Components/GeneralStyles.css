@@ -8,6 +8,7 @@
   text-align: center;
   margin: 5% 0 2%;
 }
+/* Add courses component styles */
 .addCourse__form__container {
   width: 97%;
   height: 70vh;
@@ -52,4 +53,23 @@
 .addCourse__form__container form button:hover {
   background-color: var(--color-background);
   border: var(--color-danger) 2px solid;
+}
+
+/* Messages component styles */
+.message__table__container {
+  width: 97%;
+  height: 70vh;
+  margin: 2rem 20px;
+  padding: 1rem;
+  background-color: var(--color-background1);
+}
+.message__table {
+  width: 100%;
+}
+.message__table th,
+td {
+  border-bottom: 2px var(--color-white) solid;
+  text-align: center;
+  padding: 5px;
+  color: var(--color-white);
 }

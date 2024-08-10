@@ -36,7 +36,8 @@ function AddCourses() {
             />
             <input
               id="input__field"
-              type="d"
+              type="file"
+              accept=".jpg, jpeg, png"
               placeholder="Upload Course Image"
               autoComplete="off"
               required
