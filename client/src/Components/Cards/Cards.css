@@ -1,0 +1,65 @@
+/* cards */
+.cards {
+  display: flex;
+  gap: 10px;
+}
+.parentContainer {
+  width: 100%;
+}
+
+/* card */
+.conpactCard {
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  height: 10rem !important;
+  border-radius: 0.7rem;
+  color: var(--color-white);
+  position: relative;
+  cursor: pointer;
+  background-color: var(--color-background1);
+}
+.conpactCard:hover {
+  box-shadow: none !important;
+}
+.conpactCard__content {
+}
+.radialBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 12px !important;
+  filter: drop-shadow(2px 4px 6px var(--color-danger)) !important;
+}
+.CircularProgressbar-trail {
+  display: none;
+}
+.CircularProgressbar-text {
+  fill: white !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  filter: drop-shadow(2px 4px 6px var(--color-danger)) !important;
+}
+.conpactCard__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.conpactCard__content > span:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+}
+.conpactCard__content > span:nth-child(3) {
+  font-size: 12px;
+}

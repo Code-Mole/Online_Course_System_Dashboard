@@ -1,7 +1,7 @@
 .dashboard__container {
-  width: 75%;
+  width: 80%;
   position: absolute;
-  left: 25%;
+  left: 20%;
 }
 .header {
   color: var(--color-white);

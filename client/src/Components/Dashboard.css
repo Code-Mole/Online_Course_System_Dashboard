@@ -1,5 +1,15 @@
-.dashboard__container {
-  width: 75%;
+.dashboard__containerMain {
+  width: 80%;
   position: absolute;
-  left: 25%;
+  left: 20%;
+  padding-left: 20px;
 }
+.dashboard__division {
+  width: 100%;
+  display: flex;
+}
+
+.dashboard__left {
+  width: 70%;
+}
+

@@ -4,12 +4,8 @@ import "./SideBar.css";
 // import MenuIcon from "@mui/icons-material/Menu";
 
 function SideBar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  let open = {
-    display: "block",
-  };
-  const location = useLocation();
+  
+ 
 
   return (
     <div className="sideBar__container">
@@ -20,21 +16,8 @@ function SideBar() {
             EduEmpower <span> Academy</span>
           </h1>
         </div>
-        <div
-          className="menuBtn"
-          onClick={() => {
-            setMenuOpen(!menuOpen);
-          }}
-        >
-          {/* <MenuIcon /> */}
-        </div>
-        <ul id="linksContainer" style={menuOpen ? open : {}}>
-          {location.pathname === "/login" || location.pathname === "/signup" ? (
-            <li>
-              <Link to="/">Go Back</Link>
-            </li>
-          ) : (
-            <>
+        
+        <ul id="linksContainer">
               <li>
                 <NavLink className="NavLink" to="/dashboard">
                   Dashboard
@@ -72,8 +55,7 @@ function SideBar() {
                 </NavLink>
               </li>
               </div>
-            </>
-          )}
+      
         </ul>
       </nav>
     </div>
